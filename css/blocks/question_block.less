@@ -1,0 +1,138 @@
+// main: ../style.less
+
+.main__question {
+    margin-top: 45px;
+}
+
+.main__question_block {
+    background-color: #008aff;
+    color: #fff;
+    text-align: center;
+    max-width: 730px;
+    margin: 0 auto;
+    padding: 50px 80px 60px 80px;
+    border-radius: 10px;
+}
+
+.question-title {
+    letter-spacing: 0.4px;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 2px;
+}
+
+.question-text {
+    margin-top: 8px;
+    letter-spacing: -0.2px;
+}
+
+.question__form {
+    margin-top: 55px;
+}
+
+.textarea_question {
+    width: 570px;
+    height: 120px;
+    resize: none;
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-top: 14px;
+    font-size: 16px;
+    border: none;
+    outline: 0;
+}
+.textarea_question::placeholder{
+    letter-spacing: -0.2px;
+    font-size: 16px;
+    color: #000;
+}
+
+.input_question {
+    width: 570px;
+    height: 50px;
+    border-radius: 4px;
+    margin-top: 5px;
+    padding-left: 14px;
+    padding-top: 2px;
+    border: none;
+    outline: 0;
+}
+
+.input_question::placeholder{
+    letter-spacing: 0.2px;
+    font-size: 16px;
+    color: #000;
+}
+
+.question_btn {
+    background-color: #e9620b;
+    margin: 40px auto 0 auto;
+    height: 50px;
+    width: 220px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: -0.4px;
+    padding-right: 1px;
+    outline: 0;
+    border: none;
+}
+
+.question-text-tel {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main__question_block {
+        background-color: #008aff;
+        color: #fff;
+        text-align: center;
+        width: 93.75vw;
+        margin: 14.063vw auto 0;
+        padding: 7.813vw 3.125vw 9.375vw 3.125vw;
+        border-radius: 1.563vw;
+    }
+    .question-title {
+        font-size: 6.563vw;
+        padding-top: 0;
+        padding-left: 0.781vw;
+    }
+    .question-text {
+        display: none;
+    }
+    .question-text-tel {
+        display: block;
+        font-size: 4.688vw;
+        padding-top: 2.188vw;
+        letter-spacing: -0.078vw;
+    }
+    .textarea_question {
+        width: 87.5vw;
+        height: 31.25vw;
+        border-radius: 1.875vw;
+        font-size: 4.688vw;
+        padding-left: 3.906vw;
+        padding-top: 3.125vw;
+    }
+    .textarea_question::placeholder, .input_question::placeholder {
+        font-size: 4.688vw;
+    }
+    .input_question {
+        width: 87.5vw;
+        height: 12.5vw;
+        border-radius: 1.875vw;
+        margin-top: 2.188vw;
+        font-size: 4.688vw;
+        padding-left: 3.438vw;
+    }
+    .question_btn {
+        width: 50vw;
+        height: 12.5vw; 
+        border-radius: 1.875vw;
+        font-size: 4.688vw;
+        letter-spacing: -0.156vw;
+    }
+}
+

@@ -1,0 +1,350 @@
+// main: ../style.less
+
+.main__contact {
+    width: 100%;
+    
+    margin-top: 11px;
+    position: relative;
+}
+
+.block__maps {
+    width: 100%;
+    height: 620px;
+}
+.block__maps img{
+    width: 100%;
+    height: 100%;
+}
+
+.main__contact-block {
+    width: 540px;
+    height: 530px;
+    background-color: #ffffff;
+    // margin-top: 30px;
+    border-radius: 7px;
+    padding: 20px;
+    position: absolute;
+    top: 45px;
+    left: 15.5%;
+}
+
+.main__contact-block-title {
+    font-size: 24px;
+    font-family:Manrope-Bold;
+    margin-top: 12px;
+    margin-left: 19px;
+}
+
+.main__contact-block-info {
+    display: flex;
+    margin-top: 27px;
+    margin-left: 19px;
+}
+
+.main__contact-block-hours {
+margin-right: 30px;
+}
+
+.main__contact-wait span{
+    color: #e9620b;
+}
+
+.main__contact-hours {
+    margin-top: 9px;
+    font-size: 20px;
+    font-family:Manrope-Bold;
+    letter-spacing: -0.4px;
+}
+
+.main__contact-hours span {
+    margin-right: 17px;
+    padding-top: 4px;
+    display: inline-block;   
+}
+
+.main__contact-block-call {
+    margin-left: 29px;
+    letter-spacing: -0.4px;
+}
+.main__contact-phone {
+    margin-top: 8px;
+    font-size: 20px;
+    font-family:Manrope-Bold;
+}
+.main__contact-phone span {
+    margin-right: 9px;
+    padding-top: 4px;
+    display: inline-block;   
+}
+.main__contact-phone img {
+    margin-bottom: -2px;
+}
+
+.main__contact-block-adress {
+    margin-top: 30px;
+}
+
+.main__contact-adress-top {
+    margin-left: 20px;
+}
+.main__contact-adress-top span {
+    color: #e9620b;
+}
+.main__contact-adress-green {
+    margin-top: 5px;
+    color: #b3d743;
+    padding-left: 20px;
+    font-size: 20px;
+}
+.main__contact-adress-green span {
+    margin-right: 8px;
+    display: inline-block;
+}
+.main__contact-adress-green img {
+    margin-bottom: -4px;
+}
+
+.main__contact-adress-bold {
+    font-size: 20px;
+    font-family: Manrope-Bold;
+    padding-left: 20px;
+    margin-top: 11px;
+    letter-spacing: -0.1px;
+}
+.main__contact-adress-text {
+    margin-top: 5px;
+    padding-left: 20px;
+    font-family: Manrope-Bold;
+    letter-spacing: 0px;
+    line-height: 1.6;
+}
+
+.main__contact-block-img {
+    display: flex;
+    margin-top: 30px;
+}
+.main__contact-img-image {
+    width: 100px;
+    margin-left: 21px;
+    margin-top: 10px;
+
+}
+.main__contact-img-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.main__contact-img-text {
+    margin-top: 10px;
+    margin-left: 20px;
+    line-height: 1.5;
+    letter-spacing: -0.2px;
+}
+
+.main__contact-btn {
+    width: 500px;
+    height: 50px;
+    margin-top: -5px;
+    line-height: 52px;
+    text-align: center;
+    background-color: #e9620b;
+    color: #fff;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    display: block;
+    padding-right: 20px;
+    border-radius: 12px;
+    border: none;
+    text-decoration: none;
+}
+
+.main__contact-btn span {
+    position: relative;
+}
+
+.main__contact-btn span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    right: -18px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.main__contact-img-text-tel {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main__contact-block {
+        position: relative;
+        position:static;
+        margin: 0 auto;
+        left: 0;
+        width: 100%;
+        height: auto;
+        margin-top: 7.031vw;
+    }
+    .main__contact {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .block__maps {
+        width: 100%;
+        height: 65.625vw;
+    }
+    .main__contact-block-title {
+        font-size: 6.563vw;
+        margin-left: 0.938vw;
+        margin-top: 2.813vw;
+    }
+    .main__contact-block-info {
+        margin-top: 6.25vw;
+        display: block;
+    }
+    .main__contact-block-hours {
+        font-size: 3.75vw;
+        margin-left: -1.563vw;
+    }
+    .main__contact-hours {
+        font-size: 4.688vw;
+    }
+    .main__contact-hours span {
+        margin-right: 1.563vw;
+    }
+    .main__contact-hours span img{
+        width: 4.688vw;
+    }
+    .main__contact-block-call {
+        margin-top: 4.063vw;
+        font-size: 3.75vw;
+        margin-left: -1.875vw;
+    }
+    .main__contact-phone {
+        font-size: 4.688vw;
+        letter-spacing: -0.156vw;
+    }
+    .main__contact-phone span {
+        margin-right: 0.781vw;
+    }
+    .main__contact-phone span img{
+        width: 4.688vw;
+    }
+    .main__contact-adress-top {
+        font-size: 3.75vw;
+        margin-left: 1.25vw;
+        margin-top: -0.781vw;
+    }
+    .main__contact-adress-green {
+        font-size: 4.688vw;
+        font-family: Manrope-Bold;
+        padding-left: 1.094vw;
+        margin-top: 1.563vw;
+    }
+    .main__contact-adress-green span img{
+        width: 9.375vw;
+    }
+    .main__contact-adress-bold {
+        font-size: 4.688vw;
+        padding-left: 1.094vw;
+    }
+    .main__contact-adress-text {
+        font-size: 3.75vw;
+        padding-left: 1.563vw;
+        margin-top: 1.563vw;
+        line-height: 1.5;
+        padding-right: 4.688vw;
+        color: #646464;
+    }
+
+    .main__contact-block-img {
+        margin-top: 3.125vw;
+    }
+    .main__contact-img-image {
+        width: auto;
+        margin-right: 4.688vw;
+        padding-left: 1.563vw;
+    }
+    .main__contact-img-image img {
+        width: 34.375vw;
+        object-fit: cover;
+    }
+    .main__contact-img-text{
+        display: none;
+    }
+    .main__contact-img-text-tel {
+        display: block;
+        font-size: 4.688vw;
+        padding-top: 0.625vw;
+        letter-spacing: -0.078vw;
+        line-height: 1.3;
+    }
+    .main__contact-btn {
+        height: 12.5vw; 
+        width: 90.625vw;
+        font-size: 4.688vw;
+        line-height: 12.5vw;
+        margin: -0.781vw auto 0;
+        padding-right: 5.938vw;
+    }
+    .main__contact-btn span::after {
+        width: 2.5vw;
+        height: 2.5vw;
+        border-right: 0.625vw solid #fff;
+        border-bottom: 0.625vw solid #fff;
+        right: -3.75vw;
+    }
+
+// уходит вниз при уменьшении экрана
+    // .block__maps {
+    //     margin-top: 62.5vw;
+    //     // border: 1px solid;
+    // }
+    .block__maps img {
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 550px) {
+    .main__contact-img-text-tel{
+        font-size: 4.0vw;
+    }
+    .main__contact-img-image img {
+        width: 30.375vw;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 420px) {
+    .main__contact-btn {
+        width: 85.625vw;
+    }
+    .main__contact-img-text-tel{
+        font-size: 3.7vw;
+    }
+    .main__contact-img-image img {
+        width: 28.375vw;
+        object-fit: cover;
+    }
+}
+// карты 
+
+.mobile-map {
+    display: none;
+    height: 100%
+}
+#map {
+    height: 100%;
+}
+
+@media (max-width:  768px) {
+    #map {
+        display: none
+    }
+    .mobile-map {
+        display: block;
+    }
+}

@@ -1,0 +1,449 @@
+// main: ../style.less
+
+.header {
+    // background-image: url("../img/image_bg.png");
+    // background-position: 50% 0%;
+    // background-size: 100% 0;
+    // background-repeat: no-repeat;
+    width: 100%;
+    height: 720px;
+    position: relative;
+}
+
+.header__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nav__top {
+    height: 70px;
+    width: 100%;
+}
+
+.nav__top .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__block__left, .nav__block__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__block__center {
+    margin-left: -150px;
+    padding-top: 2px;
+}
+
+.nav__call {
+    margin-top: -3px;
+    margin-right: 3px;
+    letter-spacing: 0px;
+}
+
+.logo {
+    margin-top: 5px;
+}
+
+.logo__line {
+    border-right: 3px solid #000;
+    height: 30px;
+    margin: 14px;
+}
+.nav__location__img{
+    display: flex;
+    align-items: center;
+}
+
+.logo__text {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.nav__tel {
+    font-family:Manrope-Bold;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav__call {
+    color: #e9620b;
+    font-size: 16px;
+    text-align: center;
+}
+
+.nav__location__text {
+    margin-left: 10px;
+}
+
+//nav bottom
+
+.nav__bottom {
+    background-color: #f5f5f5;
+    height: 40px;
+    width: 100%;
+}
+.nav__bottom .container {
+    height: 100%;
+}
+
+.nav__navigation {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    margin-left: auto;
+    margin-right: 0;
+    width: 400px;
+}
+
+.nav__li__center {
+    margin: 0 23px;
+}
+
+.nav__li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #969696;  
+}
+
+//modal paid
+
+.close__modal__paid {
+    right: 5px;
+    top: 5px;
+    width: 25px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.nav {
+    position: relative;
+}
+
+.modal__paid {
+    display: none;
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    top: 130px;
+    right: 100px;
+}
+
+// .modal__btn::before {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     width: 20px;
+//     height: 20px;
+//     background-color: #fff;
+//     right: 170px;
+//     top: 0px;
+//     transform: translateY(-50%) rotate(-45deg);
+// }
+
+.modal__paid-title {
+    text-align: center;
+    font-size: 24px;
+    font-family:Manrope-Bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.modal__paid-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.modal__paid-block {
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+}
+// .halva-modal {
+//     // background-color: #1b2530;
+//     border-radius: 4px;
+//     text-align: center;
+// }
+.modal__paid-block img{
+    width: 100%; 
+}
+// .halva-modal img{
+//     width: 70%;
+//     height: 70%;
+//     padding-top: 15px;
+// }
+
+.modal__paid-blo {
+    width: 160px;
+    margin: 10px;
+}
+.modal__paid-blo img {
+    width: 100%;
+}
+
+.modal__btn {
+    background-color: #008aff;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    padding: 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    width: 300px;
+    margin: 20px auto 0;
+    text-align: center;
+    padding-right: 30px;
+}
+
+.modal__btn span {
+    position: relative;
+}
+
+.modal__btn span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    right: -18px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+// display none
+
+.nav__block__center-none {
+    display: none;
+}
+
+.mob_phone_btn {
+    font-size: 16px;
+    width: 30px;
+    display: block;
+}
+.mob_phone_btn img {
+    width: 100%;
+}
+
+.navbar-toggler {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+    background: none;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.navbar-toggler span {
+    display: block;
+    height: 4px;
+    width: 30px;
+    background: #000;
+    transition: all .2s linear;
+}
+
+// burger menu
+
+.burger__menu {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 40px;
+    display: none;
+}
+
+.burger__ul {
+    font-size: 20px;
+    list-style: none;
+}
+.burger__li:hover {
+    margin-top: 2px;
+    background-color: rgb(236, 236, 236);
+}
+
+.burger__li a{
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s linear;
+    border-bottom: 1px solid #000;
+    margin-bottom: 4px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .header{
+    height: 500px;
+    // margin-bottom: 100px;
+    }
+    .header__img{
+        top: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .nav__block__center {
+        margin: 0 auto 0;
+    }  
+    .header {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .nav__top {
+        font-size: 4.688vw;
+        padding-left: 3.675vw;
+        padding-right: 4.188vw; 
+        height: 14.063vw;
+        align-items: center;
+        background-color: #fff;
+    }
+    .logo__line {
+        height: 6.563vw;
+        margin-left: 2.969vw;
+    }
+    .logo__text {
+        font-size:4.688vw;
+        margin-left: 0.469vw;
+        margin-top: -0.469vw;
+        letter-spacing: -0.078vw;
+    }
+    .nav__location__img{
+        width: 3.906vw;
+        margin-right: 0.313vw;
+    }
+    .nav__location__img img{
+        width: 100%;
+    }
+    .logo {
+        width: 17.188vw;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .nav__tel {
+        font-size: 5.625vw; 
+        padding-left: 1.25vw;
+    }
+    .nav__call{
+        font-size: 3.75vw;
+        margin-top: -0.938vw;
+        letter-spacing: -0.078vw;
+        padding-left: 3.438vw;
+    }
+    .header__img{
+        top: 10.938vw;
+    }
+    .header__img img{
+        width: 100%;
+    }
+    .nav__block__center {
+        display: none;
+    }  
+    .nav__block__center-none {
+        height: 15.625vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ecebe870;
+        text-align: center;
+        padding: 1.563vw 3.125vw 1.563vw 3.906vw;  
+    }
+    .nav__block__center-none span {
+        height: 0.781vw;
+    }
+    .navbar-toggler  {
+        height: 5.313vw;
+        width: 5.313vw;
+    }
+    .navbar-toggler span {
+        height: 0.625vw;
+        width: 4.688vw;
+    }
+    .mob_phone_btn {
+        width: 6.25vw;
+        margin-right: 1.563vw;
+        margin-top: 0.625vw;
+    }
+    .nav__bottom {
+        display: none;
+    }
+    .header__img {
+        width: 100%;
+        margin-top: 3.125vw;
+        height: 65.625vw;
+    }
+
+    .modal__paid {
+        display: none;
+        width: 300px;
+        height: 400px;
+        background-color: #fff;
+        position: absolute;
+        top: 170px;
+        right: 0px;
+    }
+    .modal__paid-title {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .modal__btn {
+        width: 200px;
+        font-size: 12px;
+        height: 40px;
+        margin-top: 10px;
+        line-height: 10px;
+    }
+    .nav__top {
+        background-color: #fff;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

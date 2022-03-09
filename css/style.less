@@ -1,0 +1,73 @@
+//compress: true
+
+@font-face{
+	font-family: Manrope-Regular;
+	src: url(../font/Manrope-Regular.ttf);
+}
+@font-face{
+	font-family:Manrope-Bold;
+	src: url(../font/Manrope-Bold.ttf);
+}
+
+html{
+    font-size: 16px;
+}
+body{
+    margin: 0;
+    font-family: Manrope-Regular;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 15px;
+}
+
+.container__all {
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, ul, a{
+    margin: 0;
+    padding: 0;
+}
+
+.btns {
+    outline: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+@import "vars";
+
+// Blocks
+@import "blocks/nav";
+@import "blocks/header_inner";
+@import "blocks/one_block";
+@import "blocks/popular_brends";
+@import "blocks/price_block";
+@import "blocks/coffe_machine";
+@import "blocks/main_contact";
+@import "blocks/question_block";
+@import "blocks/repair_block";
+@import "blocks/footer";
+@import "blocks/modal__quest";
+@import "blocks/thanks";
+
+
+
+
+
+
